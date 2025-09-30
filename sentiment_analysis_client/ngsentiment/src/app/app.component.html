@@ -1,0 +1,22 @@
+ <div class="container">
+ <div class="col-lg-6 col-10 mx-auto py-2 my-2">
+        <div class="card p-4">
+            <p>Sentiment Analysis</p>
+                <input type="text" name="input" id="input" class="form-control"
+                placeholder='Enter your sentiment' [(ngModel)]=input/>
+                <p class="mt-2" id="response">{{response}}</p>
+                <input type="button" value="Process" class="btn btn-primary" (click)="process()"/>
+            
+        </div>
+    </div>
+    <div class="col-lg-6 col-10 mx-auto py-2 my-2">
+        <div class="card p-4">
+            <p>Summarization</p>
+            <textarea id="long-text-input" placeholder="Enter your copy here..." class="form-control mb-3"></textarea>
+            <button id="generate-button" disabled>
+                <span id="spinner">🔄</span> Generate Summary
+            </button>
+            <div id="output-div"></div>
+        </div>
+  </div>
+  </div>
